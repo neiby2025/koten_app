@@ -12,6 +12,7 @@ row = df.sample(1).iloc[0]
 # 格言表示
 st.title("🌿 今日の格言")
 st.subheader(f"『{row['saying']}』")
+st.caption(f"{row['reading']}")  # 読み仮名を小さく表示
 st.caption(f"出典：{row['source']}")
 st.markdown(f"**{row['interpretation']}**")
 
